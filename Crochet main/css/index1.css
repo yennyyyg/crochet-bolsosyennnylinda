@@ -1,0 +1,140 @@
+
+   /* Utiliza propiedades de transformación para mejorar el rendimiento */
+   .elemento {
+    will-change: transform; /* Indica que la transformación de este elemento puede cambiar */
+  }
+  
+  /* También puedes usar la propiedad translate3d para mejorar el rendimiento en algunos casos */
+  .elemento {
+    transform: translate3d(0, 0, 0); /* Aprovecha la aceleración por hardware */
+  } 
+      
+      
+      header {
+        background-color: #edeeee;
+        color: #100f0f;
+        padding: 20px;
+        text-align: center;
+      }
+      .navbar {
+        background-color: #f3c9f0;
+        
+      }
+      .navbar-dark .navbar-toggler-icon {
+        background-color: #f3c9f0;
+      }
+     
+      .blog-post {
+        margin-bottom: 30px;
+      }
+      footer {
+        background-color: #222121;
+        color: #000000;
+        padding: 20px;
+        text-align: center;
+      }
+      .social-icons {
+        font-size: 24px;
+        margin-right: 10px;
+        color: #000000;
+      }
+      .card {
+        margin-bottom: 20px;
+      }
+      .modal-content {
+        background-color: #dc3545;
+        color: #fff;
+      }
+     
+  /* Estilo general para el contenedor del carrusel */
+  
+  /* Estilo para el carrusel */
+  .carousel-inner {
+    position: relative;
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
+  }
+  
+  /* Ajustar las imágenes dentro del carrusel */
+  .carousel-inner img {
+    width: 80%; /* Ajusta la imagen al tamaño del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+  }
+  
+  /* Estilos para las flechas de navegación */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Ancho de las flechas de navegación */
+    color: #000; /* Color de las flechas */
+  }
+  
+  /* Estilo para los controles del carrusel */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente para las flechas */
+    border-radius: 50%; /* Bordes redondeados para las flechas */
+  }
+  
+  /* Estilo para las leyendas del carrusel */
+  .carousel-caption {
+    bottom: 20px; /* Ajusta la posición vertical de la leyenda */
+    left: 50%; /* Centra la leyenda horizontalmente */
+    transform: translateX(-50%); /* Ajusta la leyenda para centrarla */
+  }
+  
+  /* Medios de consulta para pantallas más pequeñas */
+  @media (max-width: 768px) {
+    .carousel-caption {
+        font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        bottom: 10px; /* Menos espacio en la parte inferior */
+    }
+  
+    .carousel-control-prev, .carousel-control-next {
+        width: 8%; /* Ancho de las flechas en pantallas pequeñas */
+    }
+  }
+  
+  /* Estilo para el contenedor del carrusel y contenido lateral */
+  .container-mt-4 {
+      max-width: 1200px; /* Ancho máximo del contenedor */
+      margin: 0 auto;    /* Centra el contenedor horizontalmente */
+      padding: 0 15px;   /* Añade algo de espacio en los laterales */
+  }
+  
+  /* Estilo para el carrusel */
+  .carousel-inner {
+      position: relative;
+      width: 100%; /* Ajusta el ancho al 100% del contenedor */
+      overflow: hidden; /* Oculta el contenido que sobresale del contenedor */
+  }
+  
+  /* Ajustar las imágenes dentro del carrusel */
+  .carousel-inner img {
+      width: 100%; /* Ajusta la imagen al tamaño del contenedor */
+      height: auto; /* Mantiene la proporción de la imagen */
+      display: block; /* Elimina el espacio en blanco debajo de la imagen */
+  }
+  /*////////////////////////////////7*/
+  
+  /* Estilos para el contenido lateral */
+  .sidebar-content {
+      padding: 20px;
+      background-color: #f8f9fa; /* Fondo claro para el contenido lateral */
+      border-radius: 8px; /* Bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
+  /* Asegúrate de que las imágenes laterales se ajusten */
+  .sidebar-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px; /* Bordes redondeados para las imágenes */
+  }
+  
+  /* Estilo para el carrusel en pantallas grandes */
+  @media (min-width: 992px) {
+      .carousel-inner img {
+          max-height: 1200px; /* Altura máxima para las imágenes en pantallas grandes */
+          object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+      }
+  }
+  
