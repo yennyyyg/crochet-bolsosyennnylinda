@@ -41,7 +41,18 @@ ul{ list-style:none;}
 
 /*  
   
-  
+  /* Cambiar el color del texto al pasar el mouse */
+.custom-navbar .nav-link {
+  transition: color 2.1s; /* Agrega una transición suave */
+
+}
+
+.custom-navbar .nav-link:hover {
+  color: #e7bae0; /* Color que deseas al pasar el mouse */
+  background-color: #f0f0f0; /* Color de fondo opcional al hacer hover */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
   
   
   /* Personalización de la barra de navegación */
@@ -54,7 +65,7 @@ ul{ list-style:none;}
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
   color: #000000; /* Color del texto en blanco */
-  font-size: 25px; /* Aumentar el tamaño de la fuente */
+  font-size: 20px; /* Aumentar el tamaño de la fuente */
 }
 
 /* Cambiar el color del texto al pasar el mouse */
@@ -74,11 +85,33 @@ ul{ list-style:none;}
   color: #e7bae0; /* Texto oscuro al pasar el mouse */
 }
 
-/* Agregar fuente personalizada */
-body {
-  font-family: 'Roboto', sans-serif; /* Usar la fuente de Google */
-  
+/* CARRITO DE COMPRAS */
+#cart-button {
+  position: fixed;
+  right: 5px;
+  top: 50px;
+  z-index: 1050;
+  background-color: #e7bae0; /* Color deseado */
+  border-color: #080808; /* Asegúrate de que esté por encima de otros elementos */
 }
+
+#cart-button:hover {
+  background-color: #ecebeb; /* Color al pasar el mouse */
+}
+  /* Cambiar color del modal */
+  .modal-content {
+    background-color: #f8f9fa; /* Color de fondo del modal */
+    color: #000000; /* Color del texto */
+  }
+
+  .modal-header {
+    background-color: #e7bae0; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+  }
+
+  .modal-footer {
+    background-color: #f1f1f1; /* Color de fondo del pie de página */
+  }
 
 
   
@@ -193,20 +226,7 @@ body {
   }
   /*////////////////////////////////7*/
   
-  /* Estilos para el contenido lateral */
-  .sidebar-content {
-      padding: 20px;
-      background-color: #f8f9fa; /* Fondo claro para el contenido lateral */
-      border-radius: 8px; /* Bordes redondeados */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  }
-  
-  /* Asegúrate de que las imágenes laterales se ajusten */
-  .sidebar-content img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px; /* Bordes redondeados para las imágenes */
-  }
+ 
   
   /* Estilo para el carrusel en pantallas grandes */
   @media (min-width: 992px) {
