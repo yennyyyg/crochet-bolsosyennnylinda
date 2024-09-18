@@ -86,32 +86,20 @@ ul{ list-style:none;}
 }
 
 /* CARRITO DE COMPRAS */
-#cart-button {
+#Carrito{
   position: fixed;
   right: 5px;
-  top: 50px;
+  top: 80px;
   z-index: 1050;
   background-color: #e7bae0; /* Color deseado */
-  border-color: #080808; /* Asegúrate de que esté por encima de otros elementos */
+  border-color: #e7bae0; 
+
 }
 
-#cart-button:hover {
+#Carrito:hover {
   background-color: #ecebeb; /* Color al pasar el mouse */
 }
-  /* Cambiar color del modal */
-  .modal-content {
-    background-color: #f8f9fa; /* Color de fondo del modal */
-    color: #000000; /* Color del texto */
-  }
-
-  .modal-header {
-    background-color: #e7bae0; /* Color de fondo del encabezado */
-    color: white; /* Color del texto del encabezado */
-  }
-
-  .modal-footer {
-    background-color: #f1f1f1; /* Color de fondo del pie de página */
-  }
+  
 
 
   
