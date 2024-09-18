@@ -157,9 +157,7 @@ ul{ list-style:none;}
         margin-right: 10px;
         color: #000000;
       }
-      .card {
-        margin-bottom: 20px;
-      }
+   
       .modal-content {
         background-color: #dc3545;
         color: #fff;
@@ -238,7 +236,7 @@ ul{ list-style:none;}
   color: #100f0f;
   padding: 20px;
   text-align: center;
-  size: 90px;
+  size: 40px;
 
  }
   
