@@ -1,5 +1,46 @@
 
-   /* Utiliza propiedades de transformación para mejorar el rendimiento */
+  /* Personalización de la barra de navegación */
+  /* Cambiar el color de fondo de la barra de navegación */
+.custom-navbar {
+  background-color: #f7f7f7; /* Color de fondo oscuro */
+}
+
+/* Cambiar el color del texto en la barra de navegación */
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #000000; /* Color del texto en blanco */
+  font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+}
+
+/* Cambiar el color del texto al pasar el mouse */
+.custom-navbar .nav-link:hover {
+  color: #ffc107; /* Color dorado al pasar el mouse */
+}
+
+/* Estilo para el botón de búsqueda */
+.custom-navbar .btn-outline-success {
+  color: #0a0a0a; /* Color del texto en el botón */
+  border-color: #0d0c0c; /* Color del borde */
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+.custom-navbar .btn-outline-success:hover {
+  background-color: #e7bae0; /* Fondo dorado al pasar el mouse */
+  color: #343a40; /* Texto oscuro al pasar el mouse */
+}
+
+/* Agregar fuente personalizada */
+body {
+  font-family: 'Roboto', sans-serif; /* Usar la fuente de Google */
+  
+}
+
+
+  
+  
+  
+  
+  /* Utiliza propiedades de transformación para mejorar el rendimiento */
    .elemento {
     will-change: transform; /* Indica que la transformación de este elemento puede cambiar */
   }
@@ -15,37 +56,10 @@
         color: #100f0f;
         padding: 20px;
         text-align: center;
-        
-      }
-      /* Cambiar el color del texto de los enlaces del menú */
-.navbar-nav .nav-link {
-  color: #ff0000; /* Cambia este color al deseado */
-}
-
-/* Cambiar el color del texto del enlace activo del menú */
-.navbar-nav .nav-item.active .nav-link {
-  color: #00ff00; /* Cambia este color al deseado para el enlace activo */
-}
-
-/* Cambiar el color del texto del menú cuando se pasa el ratón (hover) */
-.navbar-nav .nav-link:hover {
-  color: #0000ff; /* Cambia este color al deseado para el estado hover */
-}
-
- 
-      
-      
-
-     
-      
-      .navbar {
-        background-color: #f3c9f0;
-        
-      }
-      .navbar-dark .navbar-toggler-icon {
-        background-color: #f3c9f0;
+        size: 90px;
       }
      
+      
       .blog-post {
         margin-bottom: 30px;
       }
