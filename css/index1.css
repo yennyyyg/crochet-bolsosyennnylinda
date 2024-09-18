@@ -95,6 +95,21 @@ ul{ list-style:none;}
   border-color: #e7bae0; 
 
 }
+#Carrito1{
+  position: fixed;
+  right: 5px;
+  top: 130px;
+  z-index: 1050;
+  background-color: #9a0984; /* Color deseado */
+  border-color: #e7bae0; 
+
+}
+
+
+.offcanvas {
+  height: 50%; /* Ajusta la altura según tus preferencias */
+  top: 25%; /* Centra el offcanvas en la pantalla */
+}
 
 #Carrito:hover {
   background-color: #ecebeb; /* Color al pasar el mouse */
@@ -169,7 +184,7 @@ ul{ list-style:none;}
   
   /* Estilo para los controles del carrusel */
   .carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente para las flechas */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo blanco semi-transparente para las flechas */
     border-radius: 50%; /* Bordes redondeados para las flechas */
   }
   
@@ -219,8 +234,8 @@ ul{ list-style:none;}
   /* Estilo para el carrusel en pantallas grandes */
   @media (min-width: 992px) {
       .carousel-inner img {
-          max-height: 1200px; /* Altura máxima para las imágenes en pantallas grandes */
-          object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+          max-height: 900px; /* Altura máxima para las imágenes en pantallas grandes */
+          object-fit:cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
       }
   }
   

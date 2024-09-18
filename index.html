@@ -68,7 +68,14 @@
 
 <!-- Botón del carrito que abre el offcanvas -->
 <div class="fixed-top" style="right: 20px; top: 20px;">
-  <a href="#" class="btn btn-primary" id="Carrito"data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+  <a href="#" class="btn btn-primary" id="Carrito"data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+    <i class="fas fa-shopping-cart"></i> 
+    <span class="badge bg-danger" id="cart-count">0</span>
+  </a>
+</div>
+<!-- Botón del carrito que abre el offcanvas -->
+<div class="fixed-top" style="right: 20px; top: 20px;">
+  <a href="#" class="btn btn-primary" id="Carrito1" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
     <i class="fas fa-shopping-cart"></i> 
     <span class="badge bg-danger" id="cart-count">0</span>
   </a>
@@ -86,6 +93,19 @@
   </div>
 </div>
 
+<!-- Offcanvas del carrito -->
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Lista de compras</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Tu carrito está vacío.</p>
+    <!-- Aquí puedes agregar más contenido dinámico sobre los productos en el carrito -->
+  </div>
+</div>
+</div>
 
 
 <!-- Carrusel -->
