@@ -1,4 +1,49 @@
 
+/* Personalización FUENTE LETRA  */
+@font-face {
+  font-family: lato;
+  src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+  font-weight: bold;
+  font-style: bold;
+
+}
+
+@font-face {
+  font-family: latog;
+  src: url(../fonts/Lobster/Lobster-Regular.ttf);
+}
+
+@font-face {
+  font-family: quetrial;
+  src: url(../fonts/Questrial/Questrial-Regular.ttf);
+}
+
+
+/*
+Ajustes generales de las letras
+*/
+h1{ font-family:latog;
+    font-weight: bold}
+
+h2{ font-family:queterial;
+    }
+
+h3{ font-family:quetrial;
+    }
+a{
+    font-family:quetrial;
+    font-weight: bold}
+
+p{  font-family:latog;}
+
+
+ul{ list-style:none;}
+
+/*  
+  
+  
+  
+  
   /* Personalización de la barra de navegación */
   /* Cambiar el color de fondo de la barra de navegación */
 .custom-navbar {
@@ -9,12 +54,12 @@
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
   color: #000000; /* Color del texto en blanco */
-  font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+  font-size: 25px; /* Aumentar el tamaño de la fuente */
 }
 
 /* Cambiar el color del texto al pasar el mouse */
 .custom-navbar .nav-link:hover {
-  color: #ffc107; /* Color dorado al pasar el mouse */
+  color: #e7bae0; /* Color dorado al pasar el mouse */
 }
 
 /* Estilo para el botón de búsqueda */
@@ -26,7 +71,7 @@
 /* Cambiar el color del botón al pasar el mouse */
 .custom-navbar .btn-outline-success:hover {
   background-color: #e7bae0; /* Fondo dorado al pasar el mouse */
-  color: #343a40; /* Texto oscuro al pasar el mouse */
+  color: #e7bae0; /* Texto oscuro al pasar el mouse */
 }
 
 /* Agregar fuente personalizada */
@@ -36,9 +81,6 @@ body {
 }
 
 
-  
-  
-  
   
   /* Utiliza propiedades de transformación para mejorar el rendimiento */
    .elemento {
@@ -64,7 +106,7 @@ body {
         margin-bottom: 30px;
       }
       footer {
-        background-color: #222121;
+        background-color: #e6e6e6;
         color: #000000;
         padding: 20px;
         text-align: center;
