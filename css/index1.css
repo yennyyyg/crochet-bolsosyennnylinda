@@ -265,4 +265,6 @@ ul{ list-style:none;}
       margin: 10px auto; /* Centra las tarjetas y añade margen */
     }
   }
-  
+  .card-body{
+    
+  }
