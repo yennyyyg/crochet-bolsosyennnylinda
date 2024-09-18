@@ -108,8 +108,12 @@ ul{ list-style:none;}
 
 
 .offcanvas {
-  height: 50%; /* Ajusta la altura según tus preferencias */
-  top: 25%; /* Centra el offcanvas en la pantalla */
+  height: 90%; /* Ajusta la altura según tus preferencias */
+  top: 60%; /* Centra el offcanvas en la pantalla */
+  width: 20%;
+  
+
+
 }
 
 #Carrito:hover {
@@ -230,7 +234,13 @@ ul{ list-style:none;}
   }
   /*////////////////////////////////7*/
   
- 
+ .texto-separador{
+  color: #100f0f;
+  padding: 20px;
+  text-align: center;
+  size: 90px;
+
+ }
   
   /* Estilo para el carrusel en pantallas grandes */
   @media (min-width: 992px) {
