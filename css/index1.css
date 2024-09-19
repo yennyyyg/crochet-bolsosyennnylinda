@@ -259,6 +259,18 @@ ul{ list-style:none;}
     margin-bottom: 20px; /* Espacio entre filas */
   }
   
-  
+  @media (max-width: 768px) {
+    .card {
+      width: 90%; /* Las tarjetas ocuparán el 90% del ancho en pantallas pequeñas */
+      margin: 10px auto; /* Centra las tarjetas y añade margen */
+      
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .card-body{
     
-  
+  }
