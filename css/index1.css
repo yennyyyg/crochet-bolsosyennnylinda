@@ -245,7 +245,9 @@ ul{ list-style:none;}
       .carousel-inner img {
           max-height: 900px; /* Altura máxima para las imágenes en pantallas grandes */
           object-fit:cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
-      }
+      
+      
+        }
   }
   
   .card-container {
@@ -259,26 +261,25 @@ ul{ list-style:none;}
     margin-bottom: 20px; /* Espacio entre filas */
   }
   
-  @media (max-width: 768px) {
-    .card {
-      width: 90%; /* Las tarjetas ocuparán el 90% del ancho en pantallas pequeñas */
-      margin: 10px auto; /* Centra las tarjetas y añade margen */
-      
-    padding-left: 5px;
-    padding-right: 5px;
-    }
 
-  }
  
-  @media (max-width: 576px) {
-    .card-title {
-      font-size: 1.5rem; /* Aumenta el tamaño del título */
-    }
-    .card-text {
-      font-size: 1rem; /* Aumenta el tamaño del texto */
-    }
-    .card img {
-      height: auto; /* Mantiene la proporción de la imagen */
-      width: 100%; /* Asegura que la imagen ocupe el ancho completo */
-    }
+    /* Estilo para el carrusel en pantallas grandes */
+    @media (min-width: 992px) {
+      .container-text-center img {
+          max-height: 500px; /* Altura máxima para las imágenes en pantallas grandes */
+          object-fit:cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+      
+      
+        }
   }
+
+    /* Estilo para el carrusel en pantallas grandes */
+    @media (min-width: 992px) {
+      .containertext img {
+          max-height: 500px; /* Altura máxima para las imágenes en pantallas grandes */
+          object-fit:cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
+          max-width: 400px;     
+      
+        }
+  }
+
