@@ -257,7 +257,7 @@ ul{ list-style:none;}
   }
   
   .card {
-    width: 80%; /* Porcentaje que ocupan las tarjetas en pantallas grandes */
+    width: 90%; /* Porcentaje que ocupan las tarjetas en pantallas grandes */
     margin-bottom: 20px; /* Espacio entre filas */
   }
   
@@ -266,7 +266,7 @@ ul{ list-style:none;}
     /* Estilo para el carrusel en pantallas grandes */
     @media (min-width: 992px) {
       .container-text-center img {
-          max-height: 500px; /* Altura máxima para las imágenes en pantallas grandes */
+          max-height: 800px; /* Altura máxima para las imágenes en pantallas grandes */
           object-fit:cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
       
       
@@ -276,12 +276,30 @@ ul{ list-style:none;}
     /* Estilo para el carrusel en pantallas grandes */
     @media (min-width: 992px) {
       .containertext img {
-          max-height: 500px; /* Altura máxima para las imágenes en pantallas grandes */
+          max-height: 800px; /* Altura máxima para las imágenes en pantallas grandes */
           object-fit:cover; /* Ajusta la imagen para cubrir el contenedor sin distorsión */
           max-width: 400px;     
       
         }
   }
+
+    /* Estilo para el carrusel en pantallas grandes */
+    @media (min-width: 1200px) {
+      .containertext img {
+        display: flex;
+        justify-content: center; /* Centra los elementos en el contenedor */
+        gap: 20px; /* Espacio entre los elementos */
+        padding-inline-start: 20px;
+    
+      
+        }
+  }
+.col-4{
+  background-color: rgb(242, 242, 242); /* Color de fondo para visualizar los elementos */
+    padding: 20px;
+    border: 1px solid #f3f4f6; /* Opcional: agregar un borde para resaltar los elementos */
+
+}
 
 .quienessomos{
   text-align: center;
