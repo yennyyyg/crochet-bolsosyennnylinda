@@ -60,7 +60,9 @@ ul{ list-style:none;}
 .custom-navbar {
   background-color: #f7f7f7; /* Color de fondo oscuro */
 }
-
+.dropdown-menu {
+  size: 30px;
+}
 /* Cambiar el color del texto en la barra de navegación */
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
@@ -289,10 +291,24 @@ ul{ list-style:none;}
         display: flex;
         justify-content: center; /* Centra los elementos en el contenedor */
         gap: 20px; /* Espacio entre los elementos */
-        padding-inline-start: 20px;
+        padding-inline-start: 50px;
     
       
         }
+  }
+
+  .btn-group{
+    gap: 60px;
+    padding-block: 10px;
+    padding-inline: 40px;
+    align-items: center;
+   
+
+  }
+  .Nombrebolso{
+    padding-top: 10px;
+    text-align: center;
+
   }
 .col-4{
   background-color: rgb(242, 242, 242); /* Color de fondo para visualizar los elementos */
