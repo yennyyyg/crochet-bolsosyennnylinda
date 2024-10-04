@@ -97,15 +97,8 @@ ul{ list-style:none;}
   border-color: #e7bae0; 
 
 }
-#Carrito1{
-  position: fixed;
-  right: 5px;
-  top: 130px;
-  z-index: 1050;
-  background-color: #9a0984; /* Color deseado */
-  border-color: #e7bae0; 
+#Carritoprod{
 
-}
 
 
 
@@ -308,8 +301,10 @@ ul{ list-style:none;}
   .Nombrebolso{
     padding-top: 10px;
     text-align: center;
+    text-size-adjust: 20px;
 
   }
+  
 .col-4{
   background-color: rgb(242, 242, 242); /* Color de fondo para visualizar los elementos */
     padding: 20px;
