@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="css/index1.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
 
-  
 
 
 </head>
@@ -86,7 +86,36 @@
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    <p>Tu carrito está vacío.</p>
+    <p>Tu carrito está vacío, llenalo!.</p>
+
+    <div id="animacion-muneco" style="width: 300px; height: 300px;"></div>
+
+<script>
+  var anim = lottie.loadAnimation({
+    container: document.getElementById('animacion-muneco'), // El div donde se cargará la animación
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'ruta/a/tu/animacion.json' // URL de la animación Lottie
+  });
+</script>
+
+<i class="fas fa-user" style="font-size: 50px; color: #ff69b4;"></i>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+  <path d="M3 14s-1 0-1-1 1-2 3-2 3 2 3 2-1 1-1 1H3zm8-1s-1 0-1-1 1-2 3-2 3 2 3 2-1 1-1 1h-4zM4 4a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+</svg>
+
+
+    <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%"></div>
+    </div>
+
+
+
+
+
+
     <!-- Aquí puedes agregar más contenido dinámico sobre los productos en el carrito -->
   </div>
 </div>
@@ -259,6 +288,9 @@
     // Aquí puedes implementar la lógica para agregar el producto al carrito
     console.log('Producto agregado:', product);
   }
+
+
+  
 </script>
 
 
