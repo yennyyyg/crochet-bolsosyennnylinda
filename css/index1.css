@@ -329,3 +329,17 @@ ul{ list-style:none;}
   50% { transform: translateX(20px); }
   100% { transform: translateX(0); }
 }
+
+.container {
+  display: block; /* Cambia a 'block' si prefieres alineación vertical */
+  justify-content: center; /* Alinea horizontalmente en el centro */
+  align-items: center; /* Alinea verticalmente en el centro */
+  height: 30px; /* Altura de la ventana */
+  background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+dotlottie-player {
+  width: 100px; /* Ajusta el tamaño */
+  height: 100px; /* Ajusta el tamaño */
+  margin: 5px; /* Espacio alrededor de la animación */
+}
