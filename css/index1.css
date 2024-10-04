@@ -103,13 +103,14 @@ ul{ list-style:none;}
 
 
 .offcanvas {
-  height: 90%; /* Ajusta la altura según tus preferencias */
-  top: 60%; /* Centra el offcanvas en la pantalla */
-  width: 20%;
+  height: 50%; /* Ajusta la altura según tus preferencias */
+  top: 20%; /* Centra el offcanvas en la pantalla */
+  width: 10%;
   
 
 
 }
+
 
 #Carrito:hover {
   background-color: #ecebeb; /* Color al pasar el mouse */
