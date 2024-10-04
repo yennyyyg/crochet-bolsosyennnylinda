@@ -317,22 +317,10 @@ ul{ list-style:none;}
   text-align: center;
 }
 
-.muneco {
-  width: 50px;
-  height: 50px;
-  background-color: #ff69b4;
-  border-radius: 50%;
-  animation: mover 2s infinite;
-}
 
-@keyframes mover {
-  0% { transform: translateX(0); }
-  50% { transform: translateX(20px); }
-  100% { transform: translateX(0); }
-}
 
 .containergato {
-  display: block; /* Cambia a 'block' si prefieres alineación vertical */
+  display: flex; /* Cambia a 'block' si prefieres alineación vertical */
   justify-content: center; /* Alinea horizontalmente en el centro */
   align-items: center; /* Alinea verticalmente en el centro */
   height: 30px; /* Altura de la ventana */
