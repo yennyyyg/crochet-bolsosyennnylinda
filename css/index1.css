@@ -103,7 +103,7 @@ ul{ list-style:none;}
 
 
 .offcanvas {
-  height: 50%; /* Ajusta la altura según tus preferencias */
+  height: 70%; /* Ajusta la altura según tus preferencias */
   top: 20%; /* Centra el offcanvas en la pantalla */
   width: 10%;
   
@@ -317,6 +317,11 @@ ul{ list-style:none;}
   text-align: center;
 }
 
+
+.containerten{
+  text-align: center;
+  padding-top: 10px;
+}
 
 
 .containergato {
