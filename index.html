@@ -31,7 +31,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item"></li>
-          <a class="nav-link active" aria-current="page" href="#">Quienes somos </a>
+          <a class="nav-link active" aria-current="page" href="">Quienes somos </a>
         </li> 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,6 +68,13 @@
     <a href="https://x.com/" class="social-icons"><i class="fab fa-twitter"></i></a>
     <a href="https://www.instagram.com/yeeeennyyg/" class="social-icons"><i class="fab fa-instagram"></i></a>
   </div>
+
+  
+ 
+
+ 
+
+   
 </header>
 
 
@@ -87,14 +94,15 @@
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito de Compras</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  
-    <p>Tu carrito está vacío, llenalo!.</p>
-    <ul id="cart-items" class="list-group"></ul>
-    
 
+    
     <!-- Aquí puedes agregar más contenido dinámico sobre los productos en el carrito -->
   </div>
+  
+  <div id="cart-items">
+  <p id="empty-cart-message">Tu carrito está vacío!</p>
+  </div>
+  
 </div>
 
 
@@ -126,6 +134,16 @@
 
         </div>
       </div>
+
+      <!-- Entrada de blog 2 -->
+      <div class="carousel-item">
+        <img src="img/productos/estilo8.2.jpg" alt="Imagen destacada 2" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>.</h2>
+          <p>.</p>
+
+        </div>
+      </div>
       <!-- Entrada de blog 3 -->
       <div class="carousel-item">
         <img src="img/Principal/7.jpg" alt="Imagen destacada 2" class="d-block w-100">
@@ -135,6 +153,15 @@
           
         </div>
       </div>      
+        <!-- Entrada de blog 4 -->
+        <div class="carousel-item">
+          <img src="img/Principal/5.jpg" alt="Imagen destacada 2" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>.</h2>
+            <p>.</p>
+            
+          </div>
+        </div>    
     </div>
     <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -151,18 +178,20 @@
   <h1> Tus bolsos en tendencia</h1>
 
 </div>
-
-
       <!--  tarjetas productos-->
       <div class="containertext">
         <div class="row">
           <div class="col-4">
             <div>
-              <img src="img/productos/estilo4.jpg" class="card-img-top" alt="Producto 4">
+              <img src="img/productos/estilo0.jpg" class="card-img-top" alt="Producto 4">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso LOLA</h3>
               
-                <a href="#" class="btn btn-primary" >Ver</a>
+                <button class="btn btn-primary add-to-cart" 
+                  data-product-name="Bolso LOLA" 
+                  data-product-image="img/productos/estilo0.jpg">
+            Agregar
+          </button>
               </div>
             </div>
           </div>
@@ -173,7 +202,12 @@
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso MULAN</h3>
                 
-                <a href="#" class="btn btn-primary">Ver</a>
+               
+                <button class="btn btn-primary add-to-cart" 
+                  data-product-name="Bolso MULAN" 
+                  data-product-image="img/productos/estilo8.jpg">
+            Agregar
+          </button>
               </div>
             </div>
           </div>
@@ -184,7 +218,12 @@
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso ROSE</h3>
               
-                <a href="#" class="btn btn-primary">Ver</a>
+              
+                <button class="btn btn-primary add-to-cart" 
+                  data-product-name="Bolso ROSE" 
+                  data-product-image="img/productos/estilo8.1.jpg">
+            Agregar
+          </button>
               </div>
             </div>
           </div>
@@ -197,7 +236,12 @@
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso mimi</h3>
               
-                <a href="#" class="btn btn-primary">Ver</a>
+               
+                <button class="btn btn-primary add-to-cart" 
+                  data-product-name="Bolso mimi" 
+                  data-product-image="img/productos/estilo 6.1.jpg">
+            Agregar
+          </button>
               </div>
             </div>
           </div>
@@ -208,7 +252,12 @@
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso nini</h3>
               
-                <a href="#" class="btn btn-primary">Ver</a>
+               
+                <button class="btn btn-primary add-to-cart" 
+                  data-product-name="Bolso nini" 
+                  data-product-image="img/productos/estilo 6.3.jpg">
+            Agregar
+          </button>
          
               </div>
             </div>
@@ -220,7 +269,12 @@
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso lili</h3>
               
-                <a href="#" class="btn" style="align-items:center ;background-color: #f1a8cd; color: #000;">Ver</a>
+              
+                <button class="btn btn-primary add-to-cart" 
+                  data-product-name="Bolso lili" 
+                  data-product-image="img/productos/estilo3.jpg">
+            Agregar
+          </button>
       
             
               </div>
@@ -230,11 +284,14 @@
       </div>
 
       <div class="quienessomos">
+
+        
         <h1 >
           ¿Quienes somos?
         
         </h1>
-        <h2>
+
+        <p>
           En MACA's BAGS, somos apasionados del arte del crochet, dedicados a crear bolsos únicos y sostenibles hechos a mano con trapillo y lana en el corazón de Colombia. Nuestra misión es combinar la tradición artesanal con diseños modernos, ofreciendo productos que no solo son funcionale 
          
          
@@ -274,6 +331,70 @@
 
 <!-- Agrega este script al final del body -->
 
+<script>
+  const cartItemsContainer = document.getElementById('cart-items');
+  const cartCountElement = document.getElementById('cart-count');
+  const emptyCartMessage = document.getElementById('empty-cart-message');
+  let cartItems = [];
+
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', (event) => {
+      const productName = event.target.getAttribute('data-product-name');
+      const productImage = event.target.getAttribute('data-product-image');
+      addToCart(productName, productImage);
+    });
+  });
+
+  function addToCart(productName, productImage) {
+    const existingItem = cartItems.find(item => item.name === productName);
+    if (existingItem) {
+      existingItem.count++;
+    } else {
+      cartItems.push({ name: productName, image: productImage, count: 1 });
+    }
+    updateCart();
+  }
+
+  function removeFromCart(productName) {
+    const itemIndex = cartItems.findIndex(item => item.name === productName);
+    if (itemIndex > -1) {
+      cartItems[itemIndex].count--;
+      if (cartItems[itemIndex].count <= 0) {
+        cartItems.splice(itemIndex, 1);
+      }
+    }
+    updateCart();
+  }
+
+  function updateCart() {
+    cartItemsContainer.innerHTML = ''; // Limpiar el contenido actual
+    if (cartItems.length === 0) {
+      emptyCartMessage.style.display = 'block';
+      cartCountElement.textContent = '0';
+    } else {
+      emptyCartMessage.style.display = 'none';
+      cartItems.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('cart-item');
+        itemElement.innerHTML = `
+          <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px;"/>
+          <span>${item.name} (x${item.count})</span>
+          <button class="btn btn-danger btn-sm remove-from-cart" data-product-name="${item.name}">Eliminar</button>
+        `;
+        cartItemsContainer.appendChild(itemElement);
+      });
+      cartCountElement.textContent = cartItems.length;
+
+      // Agregar eventos para eliminar productos
+      document.querySelectorAll('.remove-from-cart').forEach(button => {
+        button.addEventListener('click', (event) => {
+          const productName = event.target.getAttribute('data-product-name');
+          removeFromCart(productName);
+        });
+      });
+    }
+  }
+</script>
 
 
 
