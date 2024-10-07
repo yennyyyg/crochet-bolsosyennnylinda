@@ -101,15 +101,29 @@ ul{ list-style:none;}
 
 
 
-
 .offcanvas {
   height: 70%; /* Ajusta la altura según tus preferencias */
   top: 20%; /* Centra el offcanvas en la pantalla */
-  width: 10%;
-  
-
-
+  width: 300px; /* Ajusta el ancho */
 }
+
+.offcanvas-footer {
+  padding: 1rem;
+  background-color: #f8f9fa; /* Color de fondo claro */
+  border-top: 1px solid #dee2e6; /* Línea separadora */
+}
+
+.offcanvas-footer .btn {
+  width: 100%; /* Botones ocupan el ancho completo */
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
 
 
 #Carrito:hover {

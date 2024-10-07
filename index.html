@@ -83,7 +83,7 @@
 <div class="fixed-top" style="right: 20px; top: 20px;">
   <a href="#" class="btn btn-primary" id="Carrito" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
     <i class="fas fa-shopping-cart"></i> 
-    <span class="badge bg-danger" id="cart-count">0</span>
+    <span id="cart-count" class="badge bg-danger">0</span>
   </a>
 </div>
 
@@ -94,13 +94,19 @@
   <div class="offcanvas-header">
     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito de Compras</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
-    
-    <!-- Aquí puedes agregar más contenido dinámico sobre los productos en el carrito -->
   </div>
   
   <div id="cart-items">
   <p id="empty-cart-message">Tu carrito está vacío!</p>
+  </div>
+  <div class="offcanvas-footer">
+    <hr>
+    <div class="d-flex justify-content-between">
+      <span><strong>Total:</strong></span>
+      <span id="total-price">$0.00</span>
+    </div>
+    <button class="btn btn-danger mt-2" id="clear-cart">Vaciar Carrito</button>
+    <button class="btn btn-success mt-2" id="checkout">Finalizar Compra</button>
   </div>
   
 </div>
@@ -333,8 +339,8 @@
 
 <script>
   const cartItemsContainer = document.getElementById('cart-items');
-  const cartCountElement = document.getElementById('cart-count');
   const emptyCartMessage = document.getElementById('empty-cart-message');
+  const totalPriceElement = document.getElementById('total-price');
   let cartItems = [];
 
   document.querySelectorAll('.add-to-cart').forEach(button => {
@@ -368,9 +374,13 @@
 
   function updateCart() {
     cartItemsContainer.innerHTML = ''; // Limpiar el contenido actual
+    let total = 0;
+    let itemCount = 0; // Variable para contar los productos
+  
     if (cartItems.length === 0) {
       emptyCartMessage.style.display = 'block';
-      cartCountElement.textContent = '0';
+      totalPriceElement.textContent = '$0.00';
+      document.getElementById('cart-count').textContent = '0'; // Actualiza el contador del carrito
     } else {
       emptyCartMessage.style.display = 'none';
       cartItems.forEach(item => {
@@ -382,9 +392,13 @@
           <button class="btn btn-danger btn-sm remove-from-cart" data-product-name="${item.name}">Eliminar</button>
         `;
         cartItemsContainer.appendChild(itemElement);
+  
+        total += 10 * item.count; // Suponiendo que cada producto cuesta $10
+        itemCount += item.count; // Sumar la cantidad de productos
       });
-      cartCountElement.textContent = cartItems.length;
-
+      totalPriceElement.textContent = `$${total.toFixed(2)}`;
+      document.getElementById('cart-count').textContent = itemCount; // Actualiza el contador del carrito
+  
       // Agregar eventos para eliminar productos
       document.querySelectorAll('.remove-from-cart').forEach(button => {
         button.addEventListener('click', (event) => {
@@ -394,6 +408,15 @@
       });
     }
   }
+
+  document.getElementById('clear-cart').addEventListener('click', () => {
+    cartItems = [];
+    updateCart();
+  });
+
+  document.getElementById('checkout').addEventListener('click', () => {
+    alert('Proceso de compra en desarrollo.');
+  });
 </script>
 
 
