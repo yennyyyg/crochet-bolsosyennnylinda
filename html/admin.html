@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+     
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <link rel="stylesheet" href="../css/admin.css">
     <script>
         function abrirVentanaAdmin() {
@@ -14,6 +21,10 @@
 <body>
     <div class="login-container">
         <h2>Iniciar Sesión</h2>
+         <!-- gatico negro -->
+  <div class="containergato">
+    <dotlottie-player src="https://lottie.host/1864b412-3df0-483f-86b7-994787313509/xkUzDp57FS.json" background="transparent" speed="1" loop autoplay></dotlottie-player>
+</div>
         <form onsubmit="abrirVentanaAdmin(); return false;">
             <input type="text" placeholder="Usuario" required>
             <input type="password" placeholder="Contraseña" required>
