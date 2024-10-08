@@ -57,8 +57,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 500px;
     height: 500px;
-    width: 90%; /* Cambiado a 90% para pantallas pequeñas */
-    max-width: 400px; /* Ancho máximo para pantallas grandes */
+    width: 80%; /* Cambiado a 90% para pantallas pequeñas */
+    
+    
+    
+    max-width: 500px; /* Ancho máximo para pantallas grandes */
 }
 
 h2 {

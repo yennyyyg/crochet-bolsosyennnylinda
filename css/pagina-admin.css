@@ -51,5 +51,49 @@
     background-color: #f0f0f0; /* Color de fondo opcional al hacer hover */
     border-radius: 10px; /* Bordes redondeados opcionales */
   }
+   /* Cambiar el color del texto al pasar el mouse */
+.custom-navbar .nav-link {
+  transition: color 2.1s; /* Agrega una transición suave */
+
+}
+
+.custom-navbar .nav-link:hover {
+  color: #e7bae0; /* Color que deseas al pasar el mouse */
+  background-color: #f0f0f0; /* Color de fondo opcional al hacer hover */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
   
+  
+  /* Personalización de la barra de navegación */
+  /* Cambiar el color de fondo de la barra de navegación */
+.custom-navbar {
+  background-color: #f7f7f7; /* Color de fondo oscuro */
+}
+.dropdown-menu {
+  size: 30px;
+}
+/* Cambiar el color del texto en la barra de navegación */
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+  color: #000000; /* Color del texto en blanco */
+  font-size: 20px; /* Aumentar el tamaño de la fuente */
+}
+
+/* Cambiar el color del texto al pasar el mouse */
+.custom-navbar .nav-link:hover {
+  color: #e7bae0; /* Color dorado al pasar el mouse */
+}
+
+/* Estilo para el botón de búsqueda */
+.custom-navbar .btn-outline-success {
+  color: #0a0a0a; /* Color del texto en el botón */
+  border-color: #0d0c0c; /* Color del borde */
+}
+
+/* Cambiar el color del botón al pasar el mouse */
+.custom-navbar .btn-outline-success:hover {
+  background-color: #e7bae0; /* Fondo dorado al pasar el mouse */
+  color: #e7bae0; /* Texto oscuro al pasar el mouse */
+}
     
