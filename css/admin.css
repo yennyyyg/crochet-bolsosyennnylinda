@@ -36,13 +36,16 @@ p{  font-family:latog;}
 
 
 ul{ list-style:none;}
+
+
 .containergato {
-    display: flex; /* Cambia a 'block' si prefieres alineación vertical */
+    display: block; /* Cambia a 'block' si prefieres alineación vertical */
     justify-content: center; /* Alinea horizontalmente en el centro */
     align-items: center; /* Alinea verticalmente en el centro */
-    height: 70px; /* Altura de la ventana */
-    background-color: #ffffff; /* Color de fondo opcional */
-  }
+    height: 80px; /* Altura de la ventana */
+    background-color: #eb9ec5; /* Color de fondo opcional */
+
+}
   
 
 input[type="text"],
