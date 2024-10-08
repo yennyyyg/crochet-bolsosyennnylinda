@@ -1,0 +1,55 @@
+/* Personalización FUENTE LETRA  */
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+  
+  }
+  
+  @font-face {
+    font-family: latog;
+    src: url(../fonts/Lobster/Lobster-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: quetrial;
+    src: url(../fonts/Questrial/Questrial-Regular.ttf);
+  }
+  
+  
+  /*
+  Ajustes generales de las letras
+  */
+  h1{ font-family:latog;
+      font-weight: bold}
+  
+  h2{ font-family:queterial;
+      }
+  
+  h3{ font-family:quetrial;
+      }
+  a{
+      font-family:quetrial;
+      font-weight: bold}
+  
+  p{  font-family:latog;}
+  
+  
+  ul{ list-style:none;}
+  
+  /*  
+    
+    /* Cambiar el color del texto al pasar el mouse */
+  .custom-navbar .nav-link {
+    transition: color 2.1s; /* Agrega una transición suave */
+  
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #e7bae0; /* Color que deseas al pasar el mouse */
+    background-color: #f0f0f0; /* Color de fondo opcional al hacer hover */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+  }
+  
+    
