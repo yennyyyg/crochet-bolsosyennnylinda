@@ -38,7 +38,15 @@ p{  font-family:latog;}
 ul{ list-style:none;}
 
 
-
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Ajusta el ancho a 100% del contenedor */
+    padding: 10px; /* Espaciado interno de los inputs */
+    margin: 10px 0; /* Espaciado externo entre inputs */
+    border: 10px solid #ccc; /* Borde de los inputs */
+    border-radius: 5px; /* Bordes redondeados de los inputs */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
 body {
     font-family: Arial, sans-serif;
     display: flex;
