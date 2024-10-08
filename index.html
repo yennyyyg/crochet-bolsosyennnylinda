@@ -193,12 +193,14 @@
               <img src="img/productos/estilo0.jpg" class="card-img-top" alt="Producto 4">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso LOLA</h3>
+                <h3>$80,000</h3>
               
                 <button class="btn btn-primary add-to-cart" 
-                  data-product-name="Bolso LOLA" 
-                  data-product-image="img/productos/estilo0.jpg">
-            Agregar
-          </button>
+                data-product-name="Bolso LOLA" 
+                data-product-image="img/productos/estilo0.jpg" 
+                data-product-price="80000">
+                Agregar
+            </button>
               </div>
             </div>
           </div>
@@ -208,11 +210,13 @@
               <img src="img/productos/estilo8.jpg" class="card-img-top" alt="Producto 5">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso MULAN</h3>
+                <h3>$60,000</h3>
                 
                
                 <button class="btn btn-primary add-to-cart" 
                   data-product-name="Bolso MULAN" 
-                  data-product-image="img/productos/estilo8.jpg">
+                  data-product-image="img/productos/estilo8.jpg
+                   data-product-price = $60,000">
             Agregar
           </button>
               </div>
@@ -224,11 +228,13 @@
               <img src="img/productos/estilo8.1.jpg" class="card-img-top" alt="Producto 6">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso ROSE</h3>
+                <h3>$40,000</h3>
               
               
                 <button class="btn btn-primary add-to-cart" 
                   data-product-name="Bolso ROSE" 
-                  data-product-image="img/productos/estilo8.1.jpg">
+                  data-product-image="img/productos/estilo8.1.jpg
+                   data-product-price = $40,000">
             Agregar
           </button>
               </div>
@@ -242,11 +248,13 @@
               <img src="img/productos/estilo 6.1.jpg" class="card-img-top" alt="Producto 4">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso mimi</h3>
+                <h3 class="Nombrebolso">$85,000</h3>
               
                
                 <button class="btn btn-primary add-to-cart" 
                   data-product-name="Bolso mimi" 
-                  data-product-image="img/productos/estilo 6.1.jpg">
+                  data-product-image="img/productos/estilo 6.1.jpg
+                   data-product-price = $85,000">
             Agregar
           </button>
               </div>
@@ -258,11 +266,13 @@
               <img src="img/productos/estilo 6.3.jpg" class="card-img-top" alt="Producto 5">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso nini</h3>
+                <h3>$90,000</h3>
               
                
                 <button class="btn btn-primary add-to-cart" 
                   data-product-name="Bolso nini" 
-                  data-product-image="img/productos/estilo 6.3.jpg">
+                  data-product-image="img/productos/estilo 6.3.jpg
+                   data-product-price = $90,000">
             Agregar
           </button>
          
@@ -275,11 +285,13 @@
               <img src="img/productos/estilo3.jpg" class="card-img-top" alt="Producto 6">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso lili</h3>
+                <h3>$120,000</h3>
               
               
                 <button class="btn btn-primary add-to-cart" 
                   data-product-name="Bolso lili" 
-                  data-product-image="img/productos/estilo3.jpg">
+                  data-product-image="img/productos/estilo3.jpg
+                   data-product-price = $120,000">
             Agregar
           </button>
       
@@ -348,67 +360,63 @@
     button.addEventListener('click', (event) => {
       const productName = event.target.getAttribute('data-product-name');
       const productImage = event.target.getAttribute('data-product-image');
-      addToCart(productName, productImage);
+      const productPrice = event.target.getAttribute('data-product-price');
+
+      addToCart(productName, productImage, productPrice);
     });
   });
 
-  function addToCart(productName, productImage) {
+  function addToCart(productName, productImage, productPrice) {
+    // Convertir el precio a número
+    const price = parseFloat(productPrice.replace(/\$|,/g, '')); // Quitar $ y coma
+
     const existingItem = cartItems.find(item => item.name === productName);
     if (existingItem) {
-      existingItem.count++;
+        existingItem.count++;
     } else {
-      cartItems.push({ name: productName, image: productImage, count: 1 });
+        cartItems.push({ name: productName, image: productImage, price: price, count: 1 });
     }
     updateCart();
-  }
+}
 
-  function removeFromCart(productName) {
-    const itemIndex = cartItems.findIndex(item => item.name === productName);
-    if (itemIndex > -1) {
-      cartItems[itemIndex].count--;
-      if (cartItems[itemIndex].count <= 0) {
-        cartItems.splice(itemIndex, 1);
-      }
-    }
-    updateCart();
-  }
-
-  function updateCart() {
+function updateCart() {
     cartItemsContainer.innerHTML = ''; // Limpiar el contenido actual
     let total = 0;
     let itemCount = 0; // Variable para contar los productos
   
     if (cartItems.length === 0) {
-      emptyCartMessage.style.display = 'block';
-      totalPriceElement.textContent = '$0.00';
-      document.getElementById('cart-count').textContent = '0'; // Actualiza el contador del carrito
+        emptyCartMessage.style.display = 'block';
+        totalPriceElement.textContent = '$0.00';
+        document.getElementById('cart-count').textContent = '0'; // Actualiza el contador del carrito
     } else {
-      emptyCartMessage.style.display = 'none';
-      cartItems.forEach(item => {
-        const itemElement = document.createElement('div');
-        itemElement.classList.add('cart-item');
-        itemElement.innerHTML = `
-          <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px;"/>
-          <span>${item.name} (x${item.count})</span>
-          <button class="btn btn-danger btn-sm remove-from-cart" data-product-name="${item.name}">Eliminar</button>
-        `;
-        cartItemsContainer.appendChild(itemElement);
-  
-        total += 10 * item.count; // Suponiendo que cada producto cuesta $10
-        itemCount += item.count; // Sumar la cantidad de productos
-      });
-      totalPriceElement.textContent = `$${total.toFixed(2)}`;
-      document.getElementById('cart-count').textContent = itemCount; // Actualiza el contador del carrito
-  
-      // Agregar eventos para eliminar productos
-      document.querySelectorAll('.remove-from-cart').forEach(button => {
-        button.addEventListener('click', (event) => {
-          const productName = event.target.getAttribute('data-product-name');
-          removeFromCart(productName);
+        emptyCartMessage.style.display = 'none';
+        cartItems.forEach(item => {
+            const itemElement = document.createElement('div');
+            itemElement.classList.add('cart-item');
+            itemElement.innerHTML = `
+                <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px;"/>
+                <span>${item.name} (x${item.count})</span>
+                <button class="btn btn-danger btn-sm remove-from-cart" data-product-name="${item.name}">Eliminar</button>
+            `;
+            cartItemsContainer.appendChild(itemElement);
+          
+            // Sumar el precio total
+            total += item.price * item.count; // Multiplica el precio por la cantidad
+            itemCount += item.count; // Sumar la cantidad de productos
         });
-      });
+        totalPriceElement.textContent = `$${total.toFixed(2)}`;
+        document.getElementById('cart-count').textContent = itemCount; // Actualiza el contador del carrito
+       
+        // Agregar eventos para eliminar productos
+        document.querySelectorAll('.remove-from-cart').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const productName = event.target.getAttribute('data-product-name');
+                removeFromCart(productName);
+            });
+        });
     }
-  }
+}
+
 
   document.getElementById('clear-cart').addEventListener('click', () => {
     cartItems = [];
