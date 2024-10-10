@@ -321,9 +321,9 @@ ul{ list-style:none;}
   }
   
 .col-4{
-  background-color: rgb(242, 242, 242); /* Color de fondo para visualizar los elementos */
+  background-color: rgba(208, 208, 206, 0.745); /* Color de fondo para visualizar los elementos */
     padding: 20px;
-    border: 1px solid #f3f4f6; /* Opcional: agregar un borde para resaltar los elementos */
+    border: 1px solid rgba(208, 208, 206, 0.745); /* Opcional: agregar un borde para resaltar los elementos */
 
 }
 
