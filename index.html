@@ -190,20 +190,74 @@
         <div class="row">
           <div class="col-4">
             <div>
-              <img src="img/productos/estilo0.jpg" class="card-img-top" alt="Producto 4">
+              <img src="img/productos/bolso0/estilo0.jpg" class="card-img-top product-image" alt="Producto 4" 
+              data-toggle="modal" data-target="#productModal" 
+              data-product-name="Bolso LOLA" 
+              data-product-images="img/productos/bolso0/estilo0.jpg">
               <div class="card-body">
                 <h3 class="Nombrebolso">Bolso LOLA</h3>
                 <h3>$80,000</h3>
               
                 <button class="btn btn-primary add-to-cart" 
                 data-product-name="Bolso LOLA" 
-                data-product-image="img/productos/estilo0.jpg" 
+                data-product-image="img/productos/bolso0/estilo0.jpg" 
                 data-product-price="80000">
                 Agregar
             </button>
               </div>
             </div>
           </div>
+<!--  tarjetas modal ventana nueva al presionar la imagen -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="productModalLabel">Maca'S BAGS</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <div id="accordion">
+                  <div class="card">
+                      <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                              <h2>Bolso LOLA</h2>
+                              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                                  <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <img src="img/productos/bolso0/estilo0.jpg" class="d-block w-100" alt="Bolso estilo 0">
+                                      </div>
+                                      <div class="carousel-item">
+                                          <img src="img/productos/bolso0/bolso0l.jpg" class="d-block w-100" alt="Bolso lateral">
+                                      </div>
+                                      <div class="carousel-item">
+                                          <img src="img/productos/bolso0/bolso0p.jpg" class="d-block w-100" alt="Bolso posterior">
+                                      </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Next</span>
+                                  </button>
+                                  
+                              </div>
+                              
+                            </div>
+                           
+                          </h5>
+                      
+                    
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
       
           <div class="col-4">
             <div>
@@ -431,7 +485,7 @@ function updateCart() {
 
 
 
-
+<script src="js/index.js"></script>
 
 
 

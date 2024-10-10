@@ -12,7 +12,11 @@ const db = getFirestore(firebaseApp);
 
 // Detect auth state 
 
-onAuthStateChanged(auth, user)
+//onAuthStateChanged(auth, user =>{
+
+  //  if(usernull )
+
+//});
 
 
 

@@ -354,3 +354,17 @@ dotlottie-player {
   margin: 10px; /* Espacio alrededor de la animación */
   padding-right: 20px;
 }
+
+.modal-body {
+  overflow: auto;
+  background-color:#f4f4e5;
+  
+}
+
+
+#imageGallery img {
+  width: 100%;
+  height: auto;
+  margin: 5px 0;
+}
+
