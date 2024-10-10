@@ -357,14 +357,16 @@ dotlottie-player {
 
 .modal-body {
   overflow: auto;
-  background-color:#f4f4e5;
+  background-color:#e4e9f7;
+  
   
 }
 
 
 #imageGallery img {
-  width: 100%;
+  width: 30%;
   height: auto;
-  margin: 5px 0;
+  margin: 90px;
+
 }
 
